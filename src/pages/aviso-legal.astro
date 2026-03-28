@@ -1,0 +1,49 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+---
+
+<Layout title="Aviso Legal — Grano a Grano Bakery">
+  <main class="max-w-3xl mx-auto px-6 py-20">
+    <a href="/" class="inline-flex items-center gap-2 text-[#C4956A] hover:text-[#B07D55] mb-8 font-medium transition-colors">
+      ← Volver al inicio
+    </a>
+    
+    <h1 class="font-serif text-4xl font-bold text-[#3D2B1F] mb-8">Aviso Legal</h1>
+    
+    <div class="prose max-w-none text-[#5C3D2E] space-y-6">
+      <section>
+        <h2 class="font-serif text-2xl font-bold text-[#3D2B1F] mb-3">1. Datos identificativos</h2>
+        <p>En cumplimiento del artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico, se informa:</p>
+        <ul class="list-disc pl-5 mt-2 space-y-1">
+          <li><strong>Denominación:</strong> Grano a Grano Bakery</li>
+          <li><strong>Domicilio:</strong> C. Socuéllamos, 14, nave 12, 13005 Ciudad Real, España</li>
+          <li><strong>Teléfono:</strong> +34 658 54 20 68</li>
+          <li><strong>Email:</strong> granoagranoobrador@gmail.com</li>
+        </ul>
+      </section>
+      
+      <section>
+        <h2 class="font-serif text-2xl font-bold text-[#3D2B1F] mb-3">2. Objeto</h2>
+        <p>El presente aviso legal regula el uso del sitio web granoagranoobrador.com. El acceso a este sitio web implica la aceptación de las condiciones de uso aquí establecidas.</p>
+      </section>
+      
+      <section>
+        <h2 class="font-serif text-2xl font-bold text-[#3D2B1F] mb-3">3. Propiedad intelectual</h2>
+        <p>Todos los contenidos del sitio web, incluyendo textos, imágenes, marcas y logotipos, son propiedad de Grano a Grano Bakery o de sus legítimos titulares. Queda prohibida su reproducción sin autorización expresa.</p>
+      </section>
+      
+      <section>
+        <h2 class="font-serif text-2xl font-bold text-[#3D2B1F] mb-3">4. Responsabilidad</h2>
+        <p>Grano a Grano Bakery no se responsabiliza de los posibles errores en la información contenida en este sitio ni de los posibles daños derivados del uso del mismo.</p>
+      </section>
+      
+      <section>
+        <h2 class="font-serif text-2xl font-bold text-[#3D2B1F] mb-3">5. Legislación aplicable</h2>
+        <p>Las presentes condiciones se rigen por la legislación española. Para cualquier controversia, las partes se someten a los juzgados y tribunales de Ciudad Real.</p>
+      </section>
+    </div>
+  </main>
+  <Footer />
+</Layout>
