@@ -1,0 +1,85 @@
+---
+const faqs = [
+  {
+    pregunta: "¿Cómo hago un pedido?",
+    respuesta: "Por WhatsApp al 658 54 20 68 con al menos 48 horas de antelación. Cuéntanos qué variedades y cantidades quieres, y te confirmamos disponibilidad y día de recogida."
+  },
+  {
+    pregunta: "¿Hacéis envíos a domicilio?",
+    respuesta: "Sí, hacemos delivery en Ciudad Real capital y Miguelturra. También puedes recoger en el obrador (C. Socuéllamos, 14, nave 12) o en Carapan Bakery (centro de Ciudad Real)."
+  },
+  {
+    pregunta: "¿Vuestro pan lleva conservantes o aditivos?",
+    respuesta: "Nunca. Solo harina, agua y sal. Sin mejorantes, sin conservantes, sin ningún aditivo. La magia está en la fermentación lenta y la calidad de los ingredientes."
+  },
+  {
+    pregunta: "¿Qué es exactamente la masa madre?",
+    respuesta: "Es un cultivo vivo de levaduras y bacterias lácticas que usamos en lugar de levadura industrial. El nuestro lleva años creciendo. La fermentación de 24-30 horas que hacemos con ella produce un pan más digestivo, con más sabor y que se conserva mucho mejor."
+  },
+  {
+    pregunta: "¿Puedo ir directamente a comprar sin pedir antes?",
+    respuesta: "En Carapan (C. Caballeros, centro de Ciudad Real) puedes pasarte en horario de apertura y comprar lo que haya disponible. Para pedidos específicos o grandes cantidades, es necesario reservar por WhatsApp con 48h de antelación."
+  },
+  {
+    pregunta: "¿Cuánto tiempo se conserva el pan de masa madre?",
+    respuesta: "La hogaza de masa madre se conserva perfectamente 4-5 días a temperatura ambiente en un paño de tela o en la bolsa de papel. La fermentación lenta es su conservante natural. ¡También admite congelación perfectamente!"
+  },
+  {
+    pregunta: "¿Tenéis productos sin gluten?",
+    respuesta: "Actualmente nuestros productos contienen gluten. Si tienes alguna alergia o intolerancia, escríbenos por WhatsApp y te informamos de los ingredientes de cada producto."
+  },
+  {
+    pregunta: "¿Estáis en Too Good To Go?",
+    respuesta: "Sí, tenemos presencia en Too Good To Go como parte de nuestro compromiso anti-desperdicio alimentario. Puedes encontrar nuestras sorpresa-cajas en la app."
+  },
+];
+---
+
+<section id="faq" class="py-20 sm:py-28 bg-[#F5EDE0]">
+  <div class="max-w-3xl mx-auto px-6">
+    
+    <!-- Header -->
+    <div class="text-center mb-14 reveal">
+      <span class="inline-block text-[#C4956A] font-medium text-sm uppercase tracking-widest mb-4">Preguntas frecuentes</span>
+      <h2 class="font-serif text-4xl sm:text-5xl font-bold text-[#3D2B1F] leading-tight">
+        Todo lo que quieres saber
+      </h2>
+    </div>
+    
+    <!-- FAQ items -->
+    <div class="space-y-3">
+      {faqs.map((faq, i) => (
+        <details class={`reveal reveal-delay-${Math.min(i + 1, 4)} group bg-white rounded-2xl border border-[#F5E6D0] hover:border-[#C4956A]/40 transition-colors duration-200 overflow-hidden`}>
+          <summary class="flex items-center justify-between gap-4 p-6 cursor-pointer list-none select-none">
+            <h3 class="font-medium text-[#3D2B1F] text-base sm:text-lg pr-4">{faq.pregunta}</h3>
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#F5E6D0] group-open:bg-[#C4956A] flex items-center justify-center transition-colors duration-200">
+              <svg class="w-4 h-4 text-[#C4956A] group-open:text-white group-open:rotate-180 transition-all duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </span>
+          </summary>
+          <div class="px-6 pb-6 pt-0">
+            <p class="text-[#5C3D2E] leading-relaxed">{faq.respuesta}</p>
+          </div>
+        </details>
+      ))}
+    </div>
+    
+    <!-- Still have questions -->
+    <div class="mt-10 text-center reveal">
+      <p class="text-[#5C3D2E] mb-4">¿No encuentras lo que buscas?</p>
+      <a
+        href="https://wa.me/34658542068"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-2 text-[#C4956A] hover:text-[#B07D55] font-medium transition-colors"
+      >
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        Escríbenos por WhatsApp
+      </a>
+    </div>
+    
+  </div>
+</section>

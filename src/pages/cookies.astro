@@ -1,0 +1,53 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+---
+
+<Layout title="Política de Cookies — Grano a Grano Bakery">
+  <main class="max-w-3xl mx-auto px-6 py-20">
+    <a href="/" class="inline-flex items-center gap-2 text-[#C4956A] hover:text-[#B07D55] mb-8 font-medium transition-colors">
+      ← Volver al inicio
+    </a>
+    
+    <h1 class="font-serif text-4xl font-bold text-[#3D2B1F] mb-8">Política de Cookies</h1>
+    
+    <div class="text-[#5C3D2E] space-y-6">
+      <section>
+        <h2 class="font-serif text-2xl font-bold text-[#3D2B1F] mb-3">¿Qué son las cookies?</h2>
+        <p>Las cookies son pequeños archivos de texto que los sitios web almacenan en tu dispositivo cuando los visitas.</p>
+      </section>
+      
+      <section>
+        <h2 class="font-serif text-2xl font-bold text-[#3D2B1F] mb-3">Cookies que utilizamos</h2>
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm border-collapse mt-2">
+            <thead>
+              <tr class="bg-[#F5E6D0]">
+                <th class="text-left p-3 font-semibold text-[#3D2B1F] border border-[#E8D5BE]">Cookie</th>
+                <th class="text-left p-3 font-semibold text-[#3D2B1F] border border-[#E8D5BE]">Tipo</th>
+                <th class="text-left p-3 font-semibold text-[#3D2B1F] border border-[#E8D5BE]">Finalidad</th>
+                <th class="text-left p-3 font-semibold text-[#3D2B1F] border border-[#E8D5BE]">Duración</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="p-3 border border-[#E8D5BE]">cookies-accepted</td>
+                <td class="p-3 border border-[#E8D5BE]">Técnica</td>
+                <td class="p-3 border border-[#E8D5BE]">Recordar preferencia de cookies</td>
+                <td class="p-3 border border-[#E8D5BE]">1 año</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="mt-3 text-sm">Este sitio web <strong>no utiliza cookies de seguimiento, publicidad ni analítica de terceros.</strong></p>
+      </section>
+      
+      <section>
+        <h2 class="font-serif text-2xl font-bold text-[#3D2B1F] mb-3">Cómo gestionar las cookies</h2>
+        <p>Puedes configurar tu navegador para rechazar o eliminar cookies. Sin embargo, algunas funcionalidades del sitio pueden verse afectadas. Consulta la ayuda de tu navegador para más información.</p>
+      </section>
+    </div>
+  </main>
+  <Footer />
+</Layout>
